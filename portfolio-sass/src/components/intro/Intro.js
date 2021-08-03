@@ -29,9 +29,10 @@ const Intro = () => {
             Web <span ref={textRef}></span>
           </h3>
           <p>
-            I live in the UK and studying full time to become a front-end
-            developer. I have studied Chemistry but I feel like now I'm
-            following my dreams. I can't wait for what the future holds.
+            I live in UK and I am currently studying to become a front-end
+            developer. I have studied Chemistry and that but I feel like now I'm
+            following my dreams. I can't wait to solve real life problems
+            through tech.
           </p>
           <a href="#portfolio">
             <ArrowDownward className="icon" />

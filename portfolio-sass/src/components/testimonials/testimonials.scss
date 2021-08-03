@@ -1,0 +1,76 @@
+@import '../../global.scss';
+
+.testimonials {
+  background-color: $secondaryColor;
+  @include flexCenter(column);
+
+  h1 {
+    font-size: fontSize(large);
+    color: $mainColor;
+  }
+
+  .container {
+    width: 100%;
+    height: 80%;
+    @include flexJustify(center);
+
+    .card {
+      width: 250px;
+      height: 70%;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px -8px black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 20px;
+      transition: all 1s ease;
+
+      &.featured {
+        width: 300px;
+        height: 75%;
+        margin: 0 30px;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      .top {
+        @include flexJustify(center);
+
+        img {
+          &.left,
+          &.right {
+            height: 25px;
+          }
+
+          &.project {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 30px;
+          }
+        }
+      }
+      .center {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(236, 226, 228);
+      }
+
+      .bottom {
+        @include flexJustify(center);
+        flex-direction: column;
+
+        h3 {
+          margin-bottom: 5px;
+        }
+
+        h4 {
+          color: grey;
+        }
+      }
+    }
+  }
+}
