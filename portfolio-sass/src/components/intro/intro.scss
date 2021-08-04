@@ -3,6 +3,13 @@
 .intro {
   background-color: $secondaryColor;
   display: flex;
+  overflow: hidden;
+
+  //responsible for mobile using mixin
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .left {
     flex: 0.5;
@@ -17,11 +24,16 @@
       width: 700px;
       height: 700px;
       @include flexJustify(center);
-
+      // float: right;
       img {
-        width: 50%;
+        width: 60%;
         border-radius: 50%;
-        margin-bottom: 150px;
+        height: 90%;
+        // margin-bottom: 150px;
+
+        @include mobile {
+          width: 30%;
+        }
       }
     }
   }
@@ -32,8 +44,9 @@
     .wrapper {
       width: 100%;
       height: 100%;
-      padding-left: -20px;
-      @include flexCenter(column);
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
 
       h1 {
@@ -64,24 +77,30 @@
           }
         }
       }
+
       p {
         font-size: fontSize(medium);
         display: block;
-        margin-block-start: 3em;
-        margin-block-end: 3em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
+        // margin-block-start: 3em;
+        // margin-block-end: 3em;
+        // margin-inline-start: 0px;
+        // margin-inline-end: 0px;
         color: $mainColor;
       }
+      a {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
 
-      .icon {
-        font-size: 50px;
-        animation: arrowBlink 2s infinite;
-      }
+        .icon {
+          font-size: 50px;
+          animation: arrowBlink 2s infinite;
+        }
 
-      @keyframes arrowBlink {
-        to {
-          opacity: 0;
+        @keyframes arrowBlink {
+          to {
+            opacity: 0;
+          }
         }
       }
     }

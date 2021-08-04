@@ -37,3 +37,11 @@ $font-sizes: (
 @function fontSize($size-name) {
   @return map-get($font-sizes, $size-name);
 }
+
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
