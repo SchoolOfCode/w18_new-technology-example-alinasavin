@@ -1,10 +1,10 @@
 import React from 'react';
-import './testimonials.scss';
+import './experience.scss';
 import { experienceData } from '../../data';
 
-export default function Testimonials() {
+export default function Experience() {
   return (
-    <div className="testimonials" id="testimonials">
+    <div className="experience" id="experience">
       <h1>Experience</h1>
       <div className="container">
         {experienceData.map((data) => (

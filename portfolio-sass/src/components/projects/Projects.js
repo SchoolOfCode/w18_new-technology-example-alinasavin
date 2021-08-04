@@ -1,9 +1,9 @@
 import React from 'react';
-import './works.scss';
+import './projects.scss';
 import { dataWorks } from '../../data';
 import { useState } from 'react';
 
-const Works = () => {
+const Projects = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   function handleClick(side) {
@@ -16,7 +16,7 @@ const Works = () => {
     }
   }
   return (
-    <div className="works" id="works">
+    <div className="works" id="projects">
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
@@ -31,7 +31,12 @@ const Works = () => {
                   </div>
                   <h2>{data.title}</h2>
                   <p>{data.desc}</p>
-                  <span>Projects</span>
+                  <a href="https://rockpaperscrissors.netlify.app/">
+                    Try it out
+                  </a>
+                  <a href="https://github.com/SchoolOfCode/w3_rock-paper-scissors-alinasavin">
+                    GitHub Link
+                  </a>
                 </div>
               </div>
               <div className="right">
@@ -57,4 +62,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default Projects;

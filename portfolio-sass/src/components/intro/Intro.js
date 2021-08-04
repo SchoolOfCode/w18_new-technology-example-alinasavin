@@ -30,7 +30,7 @@ const Intro = () => {
           </h3>
           <p>
             I live in UK and I am currently studying to become a front-end
-            developer. I have studied Chemistry and that but I feel like now I'm
+            developer. I have studied Chemistry but I feel like now I'm
             following my dreams. I can't wait to solve real life problems
             through tech.
           </p>

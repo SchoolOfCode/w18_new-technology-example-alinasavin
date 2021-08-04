@@ -16,24 +16,24 @@ const Portfolio = () => {
   const list = [
     {
       id: 1,
-      title: 'Project#1',
+      title: 'Languages',
     },
 
     {
       id: 2,
-      title: 'Project#2',
+      title: 'Frameworks and Libraries',
     },
     {
       id: 3,
-      title: 'Project#3',
+      title: 'Design',
     },
     {
       id: 4,
-      title: 'Project#4',
+      title: 'Planning',
     },
     {
       id: 5,
-      title: 'Project#5',
+      title: 'Tools',
     },
   ];
 
@@ -60,7 +60,7 @@ const Portfolio = () => {
   }, [selectedList]);
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Projects</h1>
+      <h1>Skills</h1>
       <ul>
         {list.map((item) => (
           <PortfolioList
