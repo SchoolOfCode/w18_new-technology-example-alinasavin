@@ -23,6 +23,10 @@
         text-decoration: none;
         color: inherit; // inherits the color from the parent
         margin-right: 30px;
+
+        @include mobile {
+          font-size: 10px;
+        }
       }
 
       .itemContainer {
@@ -31,8 +35,13 @@
 
         .icon {
           font-size: map-get($font-sizes, large);
+
           // color: $mainColor;
           margin-right: 5px;
+          @include mobile {
+            font-size: map-get($font-sizes, small);
+            margin-right: 50px;
+          }
         }
       }
     }
