@@ -132,13 +132,13 @@ export const portfolio5 = [
 
   {
     id: 5,
-    title: 'Microsoft Office',
+    title: 'Netlify',
     img: '/assets/msoffice.png',
   },
   {
     id: 6,
-    title: 'Google drive',
-    img: '/assets/googledrive.png',
+    title: 'Netlify',
+    img: '/assets/netlify.png',
   },
 ];
 
@@ -146,16 +146,20 @@ export const dataWorks = [
   {
     id: 1,
     icon: '/assets/mobile.png',
-    title: 'Rock paper scissors game',
+    title: 'Rock paper scissors',
     desc: 'This project was build using HTML, CSS and JavaScript. Have some fun beating the computer at an interractive game of rock paper scissors',
     img: '/assets/rpsgame.png',
+    github: 'https://github.com/SchoolOfCode/w3_rock-paper-scissors-alinasavin',
+    netlify: 'https://quizleap.netlify.app/',
   },
   {
     id: 2,
-    icon: './assets/globe.png',
-    title: 'Mobile Application',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    img: 'https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg',
+    icon: './assets/mobile.png',
+    title: 'QuizLeap',
+    desc: 'For our Week 8 Front End project we have decided to create a quiz app website designed for quiz hosts. Using our app you can create and design personalised quizes.',
+    img: '/assets/quizleap.png',
+    github: 'https://github.com/SchoolOfCode/w8_team-project-quizleap',
+    netlify: 'https://quizleap.netlify.app/',
   },
   {
     id: 3,

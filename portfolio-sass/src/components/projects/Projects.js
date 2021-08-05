@@ -27,16 +27,12 @@ const Projects = () => {
               <div className="left">
                 <div className="leftContainer">
                   <div className="imgContainer">
-                    <img src={data.icon} alt="" />
+                    <img src={data.icon} alt="project" />
                   </div>
                   <h2>{data.title}</h2>
                   <p>{data.desc}</p>
-                  <a href="https://rockpaperscrissors.netlify.app/">
-                    Try it out
-                  </a>
-                  <a href="https://github.com/SchoolOfCode/w3_rock-paper-scissors-alinasavin">
-                    GitHub Link
-                  </a>
+                  <a href={data.netlify}>Try it out</a>
+                  <a href={data.github}>GitHub Link</a>
                 </div>
               </div>
               <div className="right">

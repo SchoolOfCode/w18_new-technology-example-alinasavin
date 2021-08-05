@@ -61,7 +61,7 @@
 
           .leftContainer {
             width: 90%;
-            height: 70%;
+            height: 90%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -82,7 +82,6 @@
                 width: 20px;
                 height: 20px;
               }
-
               img {
                 width: 25px;
 
@@ -102,16 +101,18 @@
 
             p {
               font-size: fontSize(small);
+              margin: 5px 0;
+              overflow: hidden;
+              display: block;
 
               @include mobile {
                 font-size: 10px;
               }
             }
 
-            span {
-              font-size: 12px;
+            a {
+              text-decoration: none;
               font-weight: 600;
-              text-decoration: underline;
               cursor: pointer;
             }
           }
