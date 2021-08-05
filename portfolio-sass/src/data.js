@@ -163,10 +163,12 @@ export const dataWorks = [
   },
   {
     id: 3,
-    icon: './assets/writing.png',
-    title: 'Branding',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    img: 'https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg',
+    icon: './assets/mobile.png',
+    title: 'Plantasty',
+    desc: 'React app created to help people reduce meat and dairy consumption from their diets. The website allows the user to create and generate a costumised daily meal plan based on the user diet preference',
+    img: '/assets/plantasty.png',
+    github:
+      'https://github.com/SchoolOfCode/w15_collaborative-react-project-team-f-plantasty',
   },
 ];
 
