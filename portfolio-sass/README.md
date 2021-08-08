@@ -1,3 +1,102 @@
+# React portfolio
+
+Practice using React and SASS
+
+Check out [this](https://dev.to/alinasavin/css-preprocessors-the-magic-touch-of-sass-40pk) technical blog for more things Sass.
+
+# Getting started
+
+[Set up React Ap](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app)
+
+- npx create-react-app my-app
+
+- cd my-app
+
+- npm start
+
+# File structure
+
+- Components
+
+  - TopBar
+  - Menu
+  - Intro
+  - Portfolio (skills)
+  - Projects
+  - Experience
+  - contact
+
+- CSS
+
+  - Sass
+
+- Data
+  `data.js`
+
+- Assets
+
+## Colours and Font
+
+Most colours used within the app are located within `global.scss`, change all the colours to meet your needs.
+
+Global font family/font-sizes etc. are located within `App.scss`.
+
+## Set up Sass
+
+![node add](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qiyxgwwhzbh1j6flivgk.png)
+
+### Set up project
+
+Each component has a separate scss file `experience.sass`.
+
+Variables, mixins and different features are kept in `global.scss` file, that are imported in the scss file of the component using _@import_
+
+```
+@import '../../global.scss';
+
+```
+
+## Sass main features used
+
+## Variables
+
+```
+$mainColor: #514663;
+
+```
+
+```
+
+.experience {
+  background-color: $secondaryColor;
+}
+
+```
+
+## Mixins
+
+```
+@mixin flexCenter($direction) {
+  display: flex;
+  align-items: center;
+  flex-direction: $direction;
+}
+```
+
+```
+.experience {
+  background-color: $secondaryColor;
+  @include flexCenter(column);
+
+  @include mobile {
+    justify-content: space-around;
+  }
+}
+
+```
+
+To find out more, you can access the documentation [here](https://sass-lang.com/guide).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
