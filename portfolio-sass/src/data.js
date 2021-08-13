@@ -150,7 +150,7 @@ export const dataWorks = [
     desc: 'This project was build using HTML, CSS and JavaScript. Have some fun beating the computer at an interractive game of rock paper scissors',
     img: '/assets/rpsgame.png',
     github: 'https://github.com/SchoolOfCode/w3_rock-paper-scissors-alinasavin',
-    netlify: 'https://quizleap.netlify.app/',
+    netlify: 'hhttps://rockpaperscrissors.netlify.app/',
   },
   {
     id: 2,
