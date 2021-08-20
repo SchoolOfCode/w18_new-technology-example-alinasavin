@@ -1,0 +1,120 @@
+@import '../../global.scss';
+
+.experience {
+  background-color: $secondaryColor;
+  @include flexCenter(column);
+
+  @include mobile {
+    justify-content: space-around;
+  }
+
+  h1 {
+    font-size: fontSize(large);
+    color: $mainColor;
+
+    @include mobile {
+      font-size: fontSize(medium);
+    }
+  }
+
+  .container {
+    width: 100%;
+    height: 80%;
+    @include flexJustify(center);
+
+    @include mobile {
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card {
+      width: 250px;
+      height: 70%;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px -8px black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 20px;
+      transition: all 1s ease;
+
+      @include mobile {
+        height: 180px;
+        margin: 10px 0;
+      }
+
+      &.featured {
+        width: 300px;
+        height: 75%;
+        margin: 0 30px;
+
+        @include mobile {
+          width: 250px;
+          height: 180px;
+          margin: 1px;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      .top {
+        @include flexJustify(center);
+        overflow: hidden;
+
+        img {
+          &.left,
+          &.right {
+            height: 25px;
+          }
+
+          &.project {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 30px;
+
+            @include mobile {
+              height: 20px;
+              width: 20px;
+            }
+          }
+        }
+      }
+      .center {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(236, 226, 228);
+        overflow: hidden;
+
+        @include mobile {
+          font-size: 12px;
+          padding: 5px;
+        }
+      }
+
+      .bottom {
+        @include flexJustify(center);
+        flex-direction: column;
+
+        h3 {
+          margin-bottom: 5px;
+
+          @include mobile {
+            font-size: 14px;
+          }
+        }
+
+        h4 {
+          color: grey;
+
+          @include mobile {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}

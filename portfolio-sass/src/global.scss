@@ -1,0 +1,47 @@
+//variables
+$mainColor: #514663;
+$secondaryColor: white;
+$accent-color: #bf211e;
+
+//map
+
+$font-weights: (
+  'regular': 300,
+  'medium': 500,
+  'bold': 700,
+);
+
+$font-sizes: (
+  'small': 1rem,
+  'medium': 1.5rem,
+  'large': 2rem,
+  'extraLarge': 2.5rem,
+);
+
+@mixin flexCenter($direction) {
+  display: flex;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin flexJustify($content) {
+  display: flex;
+  align-items: center;
+  justify-content: $content;
+}
+
+@function fontWeight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+@function fontSize($size-name) {
+  @return map-get($font-sizes, $size-name);
+}
+
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}

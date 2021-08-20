@@ -1,0 +1,143 @@
+@import '../../global.scss';
+
+.works {
+  background-color: $accent-color;
+  @include flexJustify(center);
+  position: relative;
+
+  .arrow {
+    height: 70px;
+    position: absolute;
+    cursor: pointer;
+
+    @include mobile {
+      display: none;
+    }
+
+    &.left {
+      left: 100px;
+    }
+
+    &.right {
+      right: 100px;
+    }
+  }
+
+  .slider {
+    height: 375px;
+    display: flex;
+    position: absolute;
+    left: 0; // changing the size you can move it as a slider
+    transition: all 1s ease-out;
+
+    @include mobile {
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100vw;
+      @include flexJustify(center);
+
+      .item {
+        width: 700px;
+        height: 100%;
+        background-color: $secondaryColor;
+        border-radius: 20px;
+        @include flexJustify(center);
+
+        @include mobile {
+          width: 80%;
+          height: 150px;
+          margin: 15px 0;
+        }
+
+        // split container into 12 pieces
+        .left {
+          flex: 4;
+          height: 80%;
+          @include flexJustify(center);
+
+          .leftContainer {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            @include mobile {
+              width: 100%;
+              height: 100%;
+            }
+
+            .imgContainer {
+              // width: 32px;
+              // height: 32px;
+              border-radius: 50%;
+              background-color: rgb(243, 174, 149);
+              @include flexJustify(center);
+
+              @include mobile {
+                width: 10px;
+                height: 10px;
+              }
+              img {
+                width: 25px;
+
+                @include mobile {
+                  width: 15px;
+                }
+              }
+            }
+
+            h2 {
+              font-size: fontSize(medium);
+              overflow: hidden;
+
+              @include mobile {
+                font-size: 10px;
+              }
+            }
+
+            p {
+              font-size: fontSize(small);
+              margin-left: 15px;
+              overflow: hidden;
+              display: block;
+
+              @include mobile {
+                font-size: 8px;
+              }
+            }
+
+            a {
+              text-decoration: none;
+              font-weight: 600;
+              cursor: pointer;
+
+              @include mobile {
+                font-size: 5px;
+              }
+            }
+          }
+        }
+        .right {
+          flex: 8;
+          height: 100%;
+          @include flexJustify(center);
+          overflow: hidden;
+
+          img {
+            width: 400px;
+
+            @include mobile {
+              width: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
