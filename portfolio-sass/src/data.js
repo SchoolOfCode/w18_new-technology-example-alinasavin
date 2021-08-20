@@ -166,7 +166,7 @@ export const dataWorks = [
     icon: './assets/mobile.png',
     title: 'Plantasty',
     desc: 'React app created to help people reduce meat and dairy consumption from their diets. The website allows the user to create and generate a costumised daily meal plan together with nutritional advice',
-    img: '/assets/plantasty.png',
+    img: '/assets/plantasty1.png',
     github:
       'https://github.com/SchoolOfCode/w15_collaborative-react-project-team-f-plantasty',
   },
