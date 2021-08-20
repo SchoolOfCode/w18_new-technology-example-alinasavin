@@ -61,6 +61,7 @@
 
       .top {
         @include flexJustify(center);
+        overflow: hidden;
 
         img {
           &.left,
@@ -86,9 +87,10 @@
         padding: 10px;
         border-radius: 10px;
         background-color: rgb(236, 226, 228);
+        overflow: hidden;
 
         @include mobile {
-          font-size: fontSize(small);
+          font-size: 12px;
           padding: 5px;
         }
       }

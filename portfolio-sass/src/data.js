@@ -157,7 +157,7 @@ export const dataWorks = [
     icon: './assets/mobile.png',
     title: 'QuizLeap',
     desc: 'For our Week 8 Front End project we have decided to create a quiz app website designed for quiz hosts. Using our app you can create and design personalised quizes.',
-    img: '/assets/quizleap.png',
+    img: '/assets/quizleap1.png',
     github: 'https://github.com/SchoolOfCode/w8_team-project-quizleap',
     netlify: 'https://quizleap.netlify.app/',
   },
@@ -165,7 +165,7 @@ export const dataWorks = [
     id: 3,
     icon: './assets/mobile.png',
     title: 'Plantasty',
-    desc: 'React app created to help people reduce meat and dairy consumption from their diets. The website allows the user to create and generate a costumised daily meal plan based on the user diet preference',
+    desc: 'React app created to help people reduce meat and dairy consumption from their diets. The website allows the user to create and generate a costumised daily meal plan together with nutritional advice',
     img: '/assets/plantasty.png',
     github:
       'https://github.com/SchoolOfCode/w15_collaborative-react-project-team-f-plantasty',
