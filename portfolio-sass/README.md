@@ -2,6 +2,10 @@
 
 Practice using React and SASS
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/90e06dec-07cd-4196-addb-413af8d9b2c2/deploy-status)](https://app.netlify.com/sites/alinasavin/deploys)
+
+Check out my portfolio [here](https://alinasavin.netlify.app/)
+
 Check out [this](https://dev.to/alinasavin/css-preprocessors-the-magic-touch-of-sass-40pk) technical blog for more things Sass.
 
 # Getting started
