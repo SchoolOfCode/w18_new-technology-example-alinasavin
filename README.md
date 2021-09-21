@@ -14,7 +14,7 @@ Check out [this](https://dev.to/alinasavin/css-preprocessors-the-magic-touch-of-
 
 - npm install
 
-- cd my-app
+- cd portfolio-sass
 
 - npm start
 
